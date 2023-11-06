@@ -1,0 +1,7 @@
+INDEX VERSION 1.132+D:\Regular_expression\.metadata\.plugins\org.eclipse.jdt.core
+3214872051.index
+3043911556.index
+1880859750.index
+3848123087.index
+702923245.index
+1865797976.index

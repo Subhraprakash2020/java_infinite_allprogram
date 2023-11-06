@@ -1,0 +1,7 @@
+127.0.0.1 - - [30/Sep/2023:11:31:42 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:11:31:44 +0530] "GET /AgentDashboard/AgentShow.jsp HTTP/1.1" 200 1212
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:11:31:55 +0530] "GET /AgentDashboard/updateAgent.jsp?agentid= HTTP/1.1" 500 2967
+127.0.0.1 - - [30/Sep/2023:11:33:47 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:11:33:48 +0530] "GET /EmployDashbord/EmployShow.jsp HTTP/1.1" 200 2778
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:11:33:50 +0530] "GET /EmployDashbord/updateEmploy.jsp?empno=1 HTTP/1.1" 200 782
+0:0:0:0:0:0:0:1 - - [30/Sep/2023:11:33:57 +0530] "GET /EmployDashbord/updateEmploy.jsp?empno=7 HTTP/1.1" 200 772

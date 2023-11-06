@@ -1,0 +1,16 @@
+127.0.0.1 - - [11/Oct/2023:22:30:44 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:30:47 +0530] "GET /HibJsfExampleDy/EmployShow.xhtml HTTP/1.1" 200 2160
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:30:47 +0530] "GET /HibJsfExampleDy/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:30:47 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:30:52 +0530] "POST /HibJsfExampleDy/EmployShow.xhtml HTTP/1.1" 200 1784
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:30:52 +0530] "GET /HibJsfExampleDy/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:30:57 +0530] "POST /HibJsfExampleDy/ShowDept.xhtml HTTP/1.1" 200 1962
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:30:57 +0530] "GET /HibJsfExampleDy/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:31:00 +0530] "POST /HibJsfExampleDy/ShowDept.xhtml HTTP/1.1" 200 2159
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:31:00 +0530] "GET /HibJsfExampleDy/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:50:07 +0530] "POST /HibJsfExampleDy/ShowDept.xhtml HTTP/1.1" 200 2161
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:50:07 +0530] "GET /HibJsfExampleDy/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:50:11 +0530] "POST /HibJsfExampleDy/EmployShow.xhtml HTTP/1.1" 200 1783
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:50:11 +0530] "GET /HibJsfExampleDy/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:50:15 +0530] "POST /HibJsfExampleDy/ShowDept.xhtml HTTP/1.1" 200 1961
+0:0:0:0:0:0:0:1 - - [11/Oct/2023:22:50:15 +0530] "GET /HibJsfExampleDy/javax.faces.resource/jsf.js.xhtml?ln=javax.faces&stage=Development HTTP/1.1" 304 -

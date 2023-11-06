@@ -1,0 +1,85 @@
+package com.java.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class ForgotPasswordServlet
+ */
+public class ForgotPasswordServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ForgotPasswordServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		PrintWriter out = response.getWriter();
+	    pwd = request.getParameter("passWord");
+	    reType = request.getParameter("retypePassword");
+	    if (pwd.equals(reType)) {
+	        String userName = request.getParameter("userName");
+	        CustomerDAO dao = new CustomerDAOImpl();
+	        try {
+	            Customer customer = dao.searchByUserName(userName);
+	            if (customer == null) {
+	                Customer customerNew = new Customer();
+	                customerNew.setFirstName(request.getParameter("firstName"));
+	                customerNew.setLastName(request.getParameter("lastName"));
+	                customerNew.setUserName(request.getParameter("userName"));
+	                String encr = EncryptPassword.getCode(request.getParameter("passWord"));
+	                customerNew.setPassword(encr);
+	                customerNew.setEmail(request.getParameter("email"));
+	                customerNew.setPhoneNo(request.getParameter("phoneNo"));
+	                String registrationResult = dao.addCustomer(customerNew);
+	                
+	                if ("User Created Successfully...".equals(registrationResult)) {
+	                    // Registration successful, send a welcome email to the user
+	                    String subject = "Welcome to YourWebsite";
+	                    String emailBody = "Dear " + customerNew.getFirstName() + ",\n\n"
+	                            + "Thank you for registering with YourWebsite. We are excited to have you as a member!\n"
+	                            + "Please feel free to explore our website and enjoy the services we offer.\n\n"
+	                            + "Best regards,\nYourWebsite Team";
+	                    
+	                    String emailResult = SendMail.mailOtp(customerNew.getEmail(), subject, emailBody);
+	                    
+	                    if ("Sent message successfully....".equals(emailResult)) {
+	                        out.println("User Created Successfully, and a welcome email has been sent.");
+	                    } else {
+	                        out.println("User Created Successfully, but there was an issue sending the welcome email.");
+	                    }
+	                } else {
+	                    out.println(registrationResult);
+	                }
+	            } else {
+	                out.println("UserName Already Exists...");
+	            }
+	        } catch (ClassNotFoundException | SQLException e) {
+	            e.printStackTrace();
+	        }
+	    } else {
+	        out.println("Password and Retype Password Must be Same...");
+	    }
+	}
+
+}

@@ -1,0 +1,76 @@
+package com.java.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class ForgotPasswordServlet
+ */
+public class ForgotPasswordServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ForgotPasswordServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String userName = request.getParameter("userName");
+
+        CustomerDAO dao = new CustomerDAOImpl();
+        PrintWriter out = response.getWriter();
+        try {
+            Customer customer = dao.searchByUserName(userName);
+
+            if (customer != null) {
+                // Generate a 10-character random password
+                String newPassword = generateRandomPassword(10);
+
+                // Update the user's password in the database
+                customer.setPassword(newPassword);
+                dao.updateCustomer(customer);
+
+                // Send the new password to the user's email
+                String email = customer.getEmail();
+                SendMail.sendForgotPasswordEmail(email, newPassword);
+
+                out.println("Password reset instructions sent to your email.");
+            } else {
+                out.println("Username not found.");
+            }
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+        }
+	}
+	 private String generateRandomPassword(int length) {
+	        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	        StringBuilder newPassword = new StringBuilder();
+
+	        for (int i = 0; i < length; i++) {
+	            int index = (int) (Math.random() * characters.length());
+	            newPassword.append(characters.charAt(index));
+	        }
+
+	        return newPassword.toString();
+	    }
+
+}
