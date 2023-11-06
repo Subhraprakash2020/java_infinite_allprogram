@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method = "get" action = "SearchAccountServlet">
+		<center>
+			Enter account Number
+		<input type="number" name = "account_no"><br>
+		<input type="submit" value="Search AccountNO">
+		</center>
+	</form>
+</body>
+</html>

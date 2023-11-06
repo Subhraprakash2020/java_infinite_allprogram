@@ -1,0 +1,6 @@
+127.0.0.1 - - [01/Nov/2023:11:40:42 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [01/Nov/2023:11:40:48 +0530] "GET /AgentHib/ShowAgent.xhtml HTTP/1.1" 200 1641
+0:0:0:0:0:0:0:1 - - [01/Nov/2023:11:40:54 +0530] "POST /AgentHib/ShowAgent.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [01/Nov/2023:11:40:55 +0530] "GET /AgentHib/UpdateAgent.xhtml HTTP/1.1" 200 1262
+0:0:0:0:0:0:0:1 - - [01/Nov/2023:11:41:05 +0530] "POST /AgentHib/UpdateAgent.xhtml HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [01/Nov/2023:11:41:06 +0530] "GET /AgentHib/ShowAgent.xhtml HTTP/1.1" 200 1643

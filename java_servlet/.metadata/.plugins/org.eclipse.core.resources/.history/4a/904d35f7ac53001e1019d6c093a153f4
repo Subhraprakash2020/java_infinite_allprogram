@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method = "put" action="InsertAccountServlet">
+		<center>
+			Enter First Name:
+			<input type="text" name = "firstName"><br><br>
+			Enter Second Name:
+			<input type="text" name = "lastName"><br><br>
+			Enter city:
+			<input type="text" name = "city"><br><br>
+			Enter State :
+			<input type="text" name = "state"><br><br>
+			Enter Amount :
+			<input type="number" name = "amount"><br><br>
+			Enter check require :
+			<select name = "checq">
+				<option value="YES">YES</option>
+				<option value="No">No</option>
+			</select><br><br>
+		</center>
+	</form>
+</body>
+</html>

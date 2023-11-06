@@ -1,0 +1,7 @@
+INDEX VERSION 1.134
+D:\java_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2587746336.index
+\BankProjectServlet\src\main\java
+D:\java_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\136043302.index
+\DemoWeb\src\main\java
+D:\java_servlet\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3452872419.index
+\Customers\src\main\java

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.time.DayOfWeek"/>
+    <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="com.java.servlet.Otp"/>
+    <fullyQualifiedTypeName name="infinite.OtpApp.OtpAppDaoImpl"/>
+    <fullyQualifiedTypeName name="com.java.servlet.CustomerDAO"/>
+    <fullyQualifiedTypeName name="com.java.servlet.CustomerDAOImpl"/>
+</qualifiedTypeNameHistroy>

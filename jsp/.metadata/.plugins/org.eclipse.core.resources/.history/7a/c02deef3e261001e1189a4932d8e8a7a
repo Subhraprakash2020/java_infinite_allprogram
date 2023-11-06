@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action="ForgotPasswordServlet">
+	
+	
+	        <center>
+            Enter your username to reset password:<br/><br/>
+            Username:
+            <input type="text" name="userName" /> <br/><br/>
+            <input type="submit" value="Reset Password" />
+        </center>
+
+</form>
+</body>
+</html>

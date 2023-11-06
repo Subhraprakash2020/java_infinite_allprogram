@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost" name="Tomcat v8.5 Server at localhost" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="15">
+    <list key="modules" value0="JsfHelloworld::org.eclipse.jst.jee.server:JsfHelloworld::jst.web::2.5" value1="HibJsfEx::org.eclipse.jst.jee.server:HibJsfEx::jst.web::2.5" value2="AgentHib::org.eclipse.jst.jee.server:AgentHib::jst.web::2.5" value3="HibJsfExampleDy::org.eclipse.jst.jee.server:HibJsfExampleDy::jst.web::2.5" value4="AgentJsf::org.eclipse.jst.jee.server:AgentJsf::jst.web::2.5" value5="Jsf_jsp::org.eclipse.jst.jee.server:Jsf_jsp::jst.web::2.5" value6="LoginJsp::org.eclipse.jst.jee.server:LoginJsp::jst.web::2.5" value7="JsfHibJsp2::org.eclipse.jst.jee.server:JsfHibJsp2::jst.web::2.5" value8="NamedQuery::org.eclipse.jst.jee.server:NamedQuery::jst.web::2.5"/>
+  </server>
+</servers>

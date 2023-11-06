@@ -1,0 +1,4 @@
+127.0.0.1 - - [04/Oct/2023:05:51:45 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:05:51:46 +0530] "GET /Customer_Otp/Login.html HTTP/1.1" 200 943
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:05:51:53 +0530] "POST /Customer_Otp/LoginServlet HTTP/1.1" 404 1103
+0:0:0:0:0:0:0:1 - - [04/Oct/2023:05:55:09 +0530] "POST /Customer_Otp/SignUpServlet HTTP/1.1" 200 30
